@@ -1,24 +1,18 @@
-'use client'
-import { motion } from 'motion/react'
-import { XIcon } from 'lucide-react'
-import { Spotlight } from '@/components/ui/spotlight'
-import { Magnetic } from '@/components/ui/magnetic'
+"use client";
+import { motion } from "motion/react";
+import { XIcon } from "lucide-react";
+import { Spotlight } from "@/components/ui/spotlight";
+import { Magnetic } from "@/components/ui/magnetic";
 import {
   MorphingDialog,
   MorphingDialogTrigger,
   MorphingDialogContent,
   MorphingDialogClose,
   MorphingDialogContainer,
-} from '@/components/ui/morphing-dialog'
-import Link from 'next/link'
-import { AnimatedBackground } from '@/components/ui/animated-background'
-import {
-  PROJECTS,
-  WORK_EXPERIENCE,
-  EMAIL,
-  SOCIAL_LINKS,
-  Education,
-} from './data'
+} from "@/components/ui/morphing-dialog";
+import Link from "next/link";
+import { AnimatedBackground } from "@/components/ui/animated-background";
+import { PROJECTS, WORK_EXPERIENCE, SOCIAL_LINKS, Education } from "./data";
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -28,26 +22,26 @@ const VARIANTS_CONTAINER = {
       staggerChildren: 0.15,
     },
   },
-}
+};
 
 const VARIANTS_SECTION = {
-  hidden: { opacity: 0, y: 20, filter: 'blur(8px)' },
-  visible: { opacity: 1, y: 0, filter: 'blur(0px)' },
-}
+  hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
+  visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+};
 
 const TRANSITION_SECTION = {
   duration: 0.3,
-}
+};
 
 type ProjectVideoProps = {
-  src: string
-}
+  src: string;
+};
 
 function ProjectVideo({ src }: ProjectVideoProps) {
   return (
     <MorphingDialog
       transition={{
-        type: 'spring',
+        type: "spring",
         bounce: 0,
         duration: 0.3,
       }}
@@ -86,15 +80,15 @@ function ProjectVideo({ src }: ProjectVideoProps) {
         </MorphingDialogClose>
       </MorphingDialogContainer>
     </MorphingDialog>
-  )
+  );
 }
 
 function MagneticSocialLink({
   children,
   link,
 }: {
-  children: React.ReactNode
-  link: string
+  children: React.ReactNode;
+  link: string;
 }) {
   return (
     <Magnetic springOptions={{ bounce: 0 }} intensity={0.3}>
@@ -120,7 +114,7 @@ function MagneticSocialLink({
         </svg>
       </a>
     </Magnetic>
-  )
+  );
 }
 
 export default function Personal() {
@@ -247,10 +241,7 @@ export default function Personal() {
       >
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
-          Feel free to contact me at{' '}
-          <a className="underline dark:text-zinc-300" href={`mailto:${EMAIL}`}>
-            {EMAIL}
-          </a>
+          Feel free to contact me at{" "}
         </p>
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
@@ -261,5 +252,5 @@ export default function Personal() {
         </div>
       </motion.section>
     </motion.main>
-  )
+  );
 }
