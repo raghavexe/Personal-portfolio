@@ -47,6 +47,13 @@ export const PROJECTS: Project[] = [
     video:"null",
     id: 'project1',
   },
+  {
+    name: 'Deutsche Plates',
+    description: 'Website to find the city, state, and location of a German car by entering its license plate initials.',
+    link: 'https://german-numberplates.vercel.app',
+    video: "null",
+    id:"project2"
+  }
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
