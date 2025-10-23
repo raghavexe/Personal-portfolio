@@ -33,15 +33,18 @@ type Education = {
 type Tools = {
   tools: string,
 }
+type ExtraCurriculars = {
+  title: string,
+  id: string,
+}
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'Home4U',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+     'Simple Home security system using WIO terminal and arduino',
+    link: 'https://github.com/raghavexe/Home4U',
+    video:"null",
     id: 'project1',
   },
 ]
@@ -91,6 +94,34 @@ export const Education: Education[] = [
     school: 'Linköping Universitet',
     outcome: 'Swedish B1',
     id:'education4'
+  },
+
+]
+export const EXTRACURRICULARS: ExtraCurriculars[] = [
+  {
+    title: "Badminton",
+   
+    id: "activity1"
+  },
+  {
+    title: "Swimming",
+   
+    id: "activity2"
+  },
+  {
+    title: "Hiking",
+   
+    id: "activity3"
+  },
+  {
+    title: "Painting",
+   
+    id: "activity4"
+  },
+  {
+    title: "Photography",
+   
+    id: "activity5"
   },
 
 ]
