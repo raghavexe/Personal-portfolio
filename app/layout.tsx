@@ -20,8 +20,6 @@ export const metadata: Metadata = {
     default: "My portfolio",
     template: "%s | Nim",
   },
-  description:
-    "Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.",
 };
 
 const geist = Geist({
