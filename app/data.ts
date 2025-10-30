@@ -63,7 +63,13 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: 'June 2025',
     end: 'September 2025',
     id: 'work1',
-  },
+  }, {
+    company: 'OpenJS',
+    title: 'contributer',
+    start: '2025',
+    end:'present',
+    id:'work2'
+  }
   
 ]
 export const TOOLS: Tools[] = [
