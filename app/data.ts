@@ -2,7 +2,6 @@ type Project = {
   name: string
   description: string
   link: string
-  video: string
   id: string
 }
 
@@ -41,19 +40,22 @@ type ExtraCurriculars = {
 export const PROJECTS: Project[] = [
   {
     name: 'Home4U',
-    description:
-     'Simple Home security system using WIO terminal and arduino',
+    description:'Simple Home security system using WIO terminal and arduino',
     link: 'https://github.com/raghavexe/Home4U',
-    video:"null",
     id: 'project1',
   },
   {
     name: 'Deutsche Plates',
     description: 'Website to find the city, state, and location of a German car by entering its license plate initials.',
     link: 'https://german-numberplates.vercel.app',
-    video: "null",
     id:"project2"
-  }
+  },
+  {
+    name: 'Idrottshuset Bokning System',
+    description: 'UI redesign for a Sports club booking system',
+    link: 'https://github.com/raghavexe/Idrottshuset-Bokning-System',
+    id: "project3"
+  },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
@@ -66,8 +68,8 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   }, {
     company: 'OpenJS',
     title: 'contributer',
-    start: '2025',
-    end:'present',
+    start: 'October 2025',
+    end:'January 2026',
     id:'work2'
   }
   
